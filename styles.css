@@ -3,20 +3,21 @@
         display: grid;
         place-items: center;
         font-family: "Plus Jakarta Sans", sans-serif;
-        transform: scale(1.5);
         background-color: #fffffc;
       }
 
     .card {
       position: relative;
-      width: 400px;
+      width: 22%;
+      min-width: 24rem;
+      max-width: 30rem;
       box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
       background-color: #fffffc;
-      border-radius: 12px;
+      border-radius: 1rem;
       display: flex;
       justify-content: space-between;
       padding: 12px 12px 12px 12px;
-      gap: 12px;
+      gap: 1rem;
       margin: auto;
       border: solid .5px rgb(214, 214, 214);
     }
@@ -38,8 +39,8 @@
       position: relative;
       z-index: 1;
       border-radius: 8px;
-      width: 140px;
-      height: 140px;
+      width: 8rem;
+      height: 8rem;
     }
 
     .photo::before {
