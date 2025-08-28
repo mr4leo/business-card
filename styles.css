@@ -29,7 +29,7 @@
       height: 100%;
       width: 100%;
       background-color: #ffffff;
-      background-image: url(images/Paper\ Texture.png);
+      background-image: url(images/Paper-Texture.png);
       background-blend-mode: multiply;
       opacity: 15%;
     }
@@ -51,7 +51,7 @@
       height: 100%;
       width: 100%;
       background-color: #ffffff;
-      background-image: url(images/Paper\ Texture.png),
+      background-image: url(images/Paper-Texture.png),
       url(images/AfolayanMarvin-Headshot.jpg);
       background-blend-mode: multiply, normal;
       background-size: cover, cover;
