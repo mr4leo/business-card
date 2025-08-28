@@ -1,60 +1,80 @@
+    
+    body {
+        display: grid;
+        place-items: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        transform: scale(1.5);
+        background-color: #fffffc;
+      }
+
     .card {
+      position: relative;
       width: 400px;
-      box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
-      background-color: #000;
-      border-bottom: 16px dashed #79b6bc;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
+      background-color: #fffffc;
       border-radius: 12px;
       display: flex;
       justify-content: space-between;
-      padding: 24px 16px 0px 16px;
+      padding: 12px 12px 12px 12px;
       gap: 12px;
       margin: auto;
+      border: solid .5px rgb(214, 214, 214);
     }
 
-    .photo img {
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff;
+      background-image: url(images/Paper\ Texture.png);
+      background-blend-mode: multiply;
+      opacity: 15%;
+    }
+
+    .photo, .photo img {
+      position: relative;
+      z-index: 1;
       border-radius: 8px;
-      width: 160px;
-      height: auto;
+      width: 140px;
+      height: 140px;
+    }
+
+    .photo::before {
+      content: '';
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff;
+      background-image: url(images/Paper\ Texture.png),
+      url(images/AfolayanMarvin\ -\ Headshot.jpg);
+      background-blend-mode: multiply, normal;
+      background-size: cover, cover;
+      opacity: 100%;
+      border-radius: 8px;
     }
 
     h1 {
-      color: #FFDB58;
+      color: #005f33;
       margin: 0;
     }
 
     h3 {
       margin: 4px 0;
-      color: white;
+      color: rgb(43, 43, 43);
+      font-style: italic;
+      letter-spacing: .5px;
     }
 
     p {
+      letter-spacing: .3px;
       font-size: 0.85rem;
+      font-weight: 500;
       margin-top: 4px;
-      color: white;
+      color: rgb(92, 92, 92);
     }
-
-        
-    /*
-    Challenge:
-    Find a color palette you like on Coolors.co
-    and use it in your business card.
-     */
-
-
-/*
-Stretch goals:
-Find other ways you can personalize 
-the design of your business card, e.g.:
-- change the border(s)
-- add border radius
-- shuffle the layout
-- shadows        🤯
-- hover effects  🤯🤯
-- animations     🤯🤯🤯
-*/
-
-/*
-Final challenge:
-Download the code to your local computer and place it
-in a folder called "business-card"
-*/
