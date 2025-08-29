@@ -4,18 +4,21 @@
         place-items: center;
         font-family: "Plus Jakarta Sans", sans-serif;
         background-color: #fffffc;
+        height: 100vh;
       }
 
     .card {
       position: relative;
-      width: 22%;
+      /* width: 22%; */
       min-width: 24rem;
-      max-width: 30rem;
+      max-width: 24rem;
       box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
       background-color: #fffffc;
       border-radius: 1rem;
+      
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 12px 12px 12px 12px;
       gap: 1rem;
       margin: auto;
@@ -79,3 +82,36 @@
       margin-top: 4px;
       color: rgb(92, 92, 92);
     }
+
+
+
+
+
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+    .card {
+      min-width: 18rem;
+      max-width: 20rem;
+    
+  }
+
+  .photo, .photo img {
+      width: 6rem;
+      height: 6rem;
+    }
+
+  h1 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: -.25rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
